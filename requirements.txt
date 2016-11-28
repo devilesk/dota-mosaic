@@ -1,0 +1,16 @@
+Cython==0.25.1
+Pillow==3.4.2
+cycler==0.10.0
+dask==0.12.0
+decorator==4.0.10
+matplotlib==1.5.3
+-e git://github.com/devilesk/myutil.git@4a5f4a2705e2681653f1bc4f1f256717820f7e85#egg=myutil-master
+networkx==1.11
+numpy==1.11.2
+pyparsing==2.1.10
+python-dateutil==2.6.0
+pytz==2016.7
+scikit-image==0.12.3
+scipy==0.18.1
+six==1.10.0
+toolz==0.8.0
