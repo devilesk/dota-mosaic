@@ -1,0 +1,6 @@
+[submodule "dota-webassets"]
+	path = dota-webassets
+	url = https://github.com/devilesk/dota-webassets.git
+[submodule "dota-datafiles"]
+	path = dota-datafiles
+	url = https://github.com/devilesk/dota-datafiles
