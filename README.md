@@ -6,7 +6,7 @@ http://imgur.com/a/NMpKl
 
 ## Install ##
 
-`pip install`
+`pip install -r requirements.txt`
 
 ## Usage ##
 
