@@ -45,8 +45,8 @@ def mosaic(image_path, dst, tile_path, tile_width, tile_height):
     final_img = Image.new('RGB', (width * tile_width, height * tile_height))
     img_data = color.rgb2lab(img)
     image_index = get_image_index(tile_path)
-    for x in xrange(0, width):
-        for y in xrange(0, height):
+    for x in range(0, width):
+        for y in range(0, height):
             pixel = np.array(img_data[y][x])
             t = closest_color(image_index, pixel)
             in_file = os.path.join(tile_path, t + ".png")

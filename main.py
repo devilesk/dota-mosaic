@@ -15,7 +15,7 @@ def get_source_images(src, images_path, tiles_path):
     herodata = open_json(hero_data_src)
     heroes = []
     abilities = []
-    for h in herodata.keys():
+    for h in list(herodata.keys()):
         if h == 'npc_dota_hero_zuus':
             heroes.append('zuus_alt1')
         else:        
@@ -51,20 +51,20 @@ def generate_mosaics(images_path, dst, tiles_path, tile_width, tile_height):
 
     for f in files:
         img_path = os.path.join(images_path, f + ".png")
-        print f
+        print(f)
         out_file = os.path.join(dst, f + ".png")
         mosaic(img_path, out_file, tiles_path, tile_width, tile_height)
 
 def optimize(src, dst):
     for fn in os.listdir(src):
         im = Image.open(src + fn)
-        print fn
+        print(fn)
         im.save(dst + fn.replace('.png', '.jpg'), quality=80)
         
 def thumbnail(src, dst, size):
     for fn in os.listdir(src):
         im = Image.open(src + fn)
-        print fn
+        print(fn)
         im.thumbnail(size)
         im.save(dst + fn)
 
