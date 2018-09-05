@@ -4,7 +4,7 @@ cycler==0.10.0
 dask==0.12.0
 decorator==4.0.10
 matplotlib==1.5.3
--e git://github.com/devilesk/myutil.git@4a5f4a2705e2681653f1bc4f1f256717820f7e85#egg=myutil-master
+-e git://github.com/devilesk/myutil.git@754be63cf8f5200bbad1d15a8427e031eda79b67#egg=myutil-master
 networkx==1.11
 numpy==1.11.2
 pyparsing==2.1.10
